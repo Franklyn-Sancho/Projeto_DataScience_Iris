@@ -15,15 +15,21 @@
 
 ### 1. Resultados e demonstrações:
 
+**1.2. Dimensão da tabela:**<br>
+Esta função retorna a dimensão da tabela. Neste caso retornaria: (150, 5) = 150 linhas e 5 colunas;
+
+
  ```python
  print(dataset.shape)
  ```
-Ao executar essa função será retornado a dimensão do nosso dataset = (150, 5) de 150 linhas e 5 colunas
+ 
+**1.3. Tabela de reusmo estatístico:**<br>
+Esta função retornará uma tabela com o com o resumo estatístico da nossa amostragem. Logo abaixo teremos uma imagem de exemplo:
 
 ```python
 print(dataset.describe())
 ```
-Essa função retornará uma tabela com o resumo estatístico da nossa amostragem: 
+Exemplo da tabela:
 
 <img src="https://github.com/Franklyn-Sancho/Projeto_DataScience_Iris/blob/main/tabelaestatistica.png"></img>
 
@@ -44,15 +50,21 @@ esta função lista os 10 primeiros itens do seu dataset. Caso queira trazer um 
 
  <h5 align="center"> Quando trabalhamos com ciência de dados, é natural termos de lidar com diversos tipos de dados diferentes, por isso é necessário facilitar ao máximo a nossa compreensão. Quando trabalhamos com python, somos abençoados por dois motivos, primeiro pela facilidade dos códigos e segundo por todas as bibliotecas que a tecnologia é capaz de nos proporcionar. Também podemos trabalhar com gráficos, o que facilita, e muito, a nossa visualização dos dados, muitas vezes gigantescos. O Matplotlib é o protagonista desse capítulo </h5>
 
-#### 2.1. Grafico bigode ou diagrama de caixa
+**2.1. Grafico bigode ou diagrama de caixa**
 
-<p> Quando estamos acostumados a trabalhar com histograma, é normal que a gente se assuste com essa belezura aí. Mas calma, ele é muito simples e intuitivo. Tudo melhora na nossa vida depois que aprendemos a interpretá-lo. Dexarei o link de um artigo do medium explicando como trabalhar com esse diagrama </p>
+<p> Quando estamos acostumados a trabalhar com histograma, é normal que a gente se assuste com essa belezura aí. Mas calma, ele é muito simples e intuitivo. Tudo melhora na nossa vida depois que aprendemos a interpretá-lo. Dexarei o link de um artigo do medium explicando como trabalhar com esse diagrama. Pra que possamos plotar ele, basta executar essa função logo abaixo  </p>
+
+```python
+dataset.plot(kind=’box’, subplots=True, layout=(2,2)
+,sharex=False, sharey=False)
+plt.show()
+```
+Exemplo do nosso gráfico: 
+<img src="https://github.com/Franklyn-Sancho/Projeto_DataScience_Iris/blob/main/graficobigode.png"></img>
+
 <p> Vamos a interpretação desse gráfico no contexto da análise? Para que a explicação se torne ainda mais simples, eu aconselho vocês a manterem a tabela de resumo estatístico por perto. A primeira imagem que nós temos, é um gráfico sobre o comprimento das sépalas (Sepal_lenght). Se vocês repararem no eixo X, verão que ele vai apenas do número 5 ao 8. Existem dois tráços, cada um numa extremidade, correto? o que está abaixo do número cinco é o **mínimo** e o que está na parte superior, próximo ao número 8, é o valor *máximo*. Para confirmar, vamos voltar lá na nossa tabela. Quais são os valores máximos e minimos que aparecem? 4.3cm e 7.9cm, né? Os traços correspondem ao valor descrito?   </p>
 <p> Agora que descobrimos onde estão os valores máximos e mínimos, sabemos que todo o universo da amostragem está entre esses dois traços. O retângulo no centro é a 'amplitude interquartil'. Esta primeira aresta inferior, próxima ao número cinco é o 1ª quartil, que equivale a 5.10cm; a linha verde no centro do retângulo é a nossa mediana, que equivale a 5.8cm; a última aresta, acima do número 6 é o nosso 3ª quartil, 75%. E aí, os valores correspondem? viu como é simples </p>
 <p> Vocês repararam as bolinhas desenhadas no segundo gráfico? lhes apresento os valores atípicos da amostragem.    </p>
-
-
-<img src="https://github.com/Franklyn-Sancho/Projeto_DataScience_Iris/blob/main/graficobigode.png"></img>
 
 #### Este é o link sobre a interpretação do gráfico: https://medium.com/@claudio.siervi/interpretando-o-diagrama-de-caixa-boxplot-1876b7c099af
 
