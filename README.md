@@ -15,10 +15,14 @@
 
 ### 1. Resultados e demonstrações:
 
-* **1.2. print(dataset.shape)**<br>
+ ```python
+ print(dataset.shape)
+ ```
 Ao executar essa função será retornado a dimensão do nosso dataset = (150, 5) de 150 linhas e 5 colunas
 
-* **1.3. print(dataset.describe())**<br>
+```python
+print(dataset.describe())
+```
 Essa função retornará uma tabela com o resumo estatístico da nossa amostragem: 
 
 <img src="https://github.com/Franklyn-Sancho/Projeto_DataScience_Iris/blob/main/tabelaestatistica.png"></img>
