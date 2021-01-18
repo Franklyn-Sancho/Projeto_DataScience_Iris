@@ -23,7 +23,6 @@ Esta função retorna a dimensão da tabela. Neste caso retornaria: (150, 5) = 1
  print(dataset.shape)
  ```
  
- <img src="https://github.com/Franklyn-Sancho/Projeto_DataScience_Iris/blob/main/histogramairis.png"></img>
  
 **1.3. Tabela de reusmo estatístico:**<br>
 Esta função retornará uma tabela com o com o resumo estatístico da nossa amostragem. Logo abaixo teremos uma imagem de exemplo:
