@@ -117,7 +117,7 @@ Um dos melhores comandos que existem, uma união de diversos gráficos para que 
 ```python
 import seaborn as sns
 
-sns.pairplot(iris, hue='Species')
+sns.pairplot(dataset, hue='classe')
 ```
 Vamos as imagens desse monumento: aproveite :heart:
 
