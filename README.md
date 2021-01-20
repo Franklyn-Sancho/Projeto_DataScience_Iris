@@ -82,6 +82,8 @@ Simples, não? Vamos a sua imagem.
 
 <img src="https://github.com/Franklyn-Sancho/Projeto_DataScience_Iris/blob/main/histogramairis.png">
 
+**2.3. Gráficos de dispersão**
+
 
 
 
