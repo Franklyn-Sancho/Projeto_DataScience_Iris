@@ -82,8 +82,43 @@ Simples, não? Vamos a sua imagem.
 
 <img src="https://github.com/Franklyn-Sancho/Projeto_DataScience_Iris/blob/main/histogramairis.png">
 
-**2.3. Gráficos de dispersão**
+**2.3. Gráficos de linha**
 
+O gráfico de linha é um dos mais importantes na ciência de dados. Antes da gente trabalhar com ele, primeiro é necessário instalar e importar a ferramenta Seaborn. 
 
+```python
+import seaborn as sns
 
+sns.lineplot('petal-length', 'petal-width',
+             hue='class', style='class', data=dataset)
+```
+Agora olha que lindão vai ficar:
 
+<img src="https://github.com/Franklyn-Sancho/Projeto_DataScience_Iris/blob/main/lineplot.png">
+
+**2.4. gráfico lmplot**
+
+Este é um gráfico de dispersão com linhas 
+
+```python
+import seaborn as sns
+
+sns.lmplot('petal-length', 'petal-width',
+           hue='class', data=dataset)
+```
+Vamos as Ibagens (meme)
+
+<img src="https://github.com/Franklyn-Sancho/Projeto_DataScience_Iris/blob/main/lmplot.png">
+
+**2.5 Gráfico pairplot**
+
+Um dos melhores comandos que existem, uma união de diversos gráficos para que a gente possa analisar por completo todos os dados de forma separada. Simplesmente incrível e o mais lindo também. Ciência de dados é isso, ter os dados e da forma mais simples possível :heart:
+
+```python
+import seaborn as sns
+
+sns.pairplot(iris, hue='Species')
+```
+Vamos as imagens desse monumento: aproveite :heart:
+
+<img src="https://github.com/Franklyn-Sancho/Projeto_DataScience_Iris/blob/main/paitplot.png">
