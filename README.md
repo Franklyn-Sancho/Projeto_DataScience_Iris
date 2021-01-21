@@ -9,6 +9,7 @@
    * numPy
    * pandas 
    * sklearn
+   * seaborn
    
  <p> Agora que estamos com nossa área de trabalho pronta, podemos iniciar o nosso projeto de analise de dados. Por amar muito a língua portuguesa, tentarei ao máximo usar os termos na nossa língua materna, talvez isso deixe tudo ainda mais claro na aplicação. Bem, neste momento, você só precisa buscar no repositório um arquivo em python, clicar nele e analisar o código comigo. Caso não domine python, não se assuste, todo o código estará comentado e explicado. </p>
  <h3 align="center">**Abra o arquivo AnaliseCode.py que está aqui mesmo no repositório**</h3>
@@ -24,8 +25,8 @@ Esta função retorna a dimensão da tabela. Neste caso retornaria: (150, 5) = 1
  ```
  
  
-**1.3. Tabela de reusmo estatístico:**<br>
-Esta função retornará uma tabela com o com o resumo estatístico da nossa amostragem. Logo abaixo teremos uma imagem de exemplo:
+**1.3. Tabela de resumo estatístico:**<br>
+Esta função retornará uma tabela com um resumo estatístico da nossa amostragem. Logo abaixo teremos uma imagem de exemplo:
 
 ```python
 print(dataset.describe())
@@ -34,7 +35,7 @@ Exemplo da tabela:
 
 <img src="https://github.com/Franklyn-Sancho/Projeto_DataScience_Iris/blob/main/tabelaestatistica.png"></img>
 
-Você já teve a oportunidade de estudar estatística? Acredite, é simplesmente maravilhoso o quanto de informações ela pode nos proporcionar com algumas poucas formulas e números. 
+Você já teve a oportunidade de estudar estatística? Acredite, é simplesmente maravilhoso o quanto de informações podemos obter com algumas formulas. No nosso caso, funções. 
  * **count**: é a contagem, total da amostragem, 150, correto. 
  * **mean**: Média total. Antes de qualquer analise, precisamos saber que todos os dados foram calculados e armazenados em centimetros. Agora sim, vamos ao que interessa. As sépalas tem em média 5.8cm de comprimento e 3cm de largura; já as pétalas tem em média 3.75cm de comprimento e 1.20cm de largura. 
  * **std**: desvio padrão - "Colocarei a explicação em breve" :warning:
@@ -44,8 +45,12 @@ Você já teve a oportunidade de estudar estatística? Acredite, é simplesmente
  * **75%**: 3ª quartil. 75% ou 3/4 do valor total. Segue a mesma lógica do primeiro e segundo quartil. 75% dos dados tem valores menores ou iguais a esses resultados
  * **max**: valor máximo encontrado
 
-* **1.4. print(dataset.head(10))**<br>
+**1.4. Listando os primeiros registros (quantos quisermos)**<br>
 esta função lista os 10 primeiros itens do seu dataset. Caso queira trazer um número especifico, basta mudar o 10 pelo numero desejado. 20 traz os 20 primeiros; 15 traz os 15; 30 traz os 30 e assim sucessivamente. 
+
+```Python 
+print(dataset.head(10))
+```
 
 ### 2. Agora vamos aos nossos gráficos e uma breve explicação
 
