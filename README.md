@@ -54,7 +54,9 @@ print(dataset.head(10))
 
 ### 2. Agora vamos aos nossos gráficos e uma breve explicação
 
- <h5 align="center"> Quando trabalhamos com ciência de dados, é natural termos de lidar com diversos tipos de dados diferentes, por isso é necessário facilitar ao máximo a nossa compreensão. Quando trabalhamos com python, somos abençoados por dois motivos, primeiro pela facilidade dos códigos e segundo por todas as bibliotecas que a tecnologia é capaz de nos proporcionar. Também podemos trabalhar com gráficos, o que facilita, e muito, a nossa visualização dos dados, muitas vezes gigantescos. O Matplotlib é o protagonista desse capítulo </h5>
+ <h5 align="center"> Quando trabalhamos com ciência de dados, é natural termos de lidar com diversos tipos de dados diferentes, por isso é necessário facilitar ao máximo a nossa compreensão. Quando trabalhamos com python, somos abençoados por dois motivos, primeiro pela facilidade dos códigos e segundo por todas as bibliotecas que a tecnologia é capaz de nos proporcionar. Também podemos trabalhar com gráficos, o que facilita, e muito, a nossa visualização dos dados, muitas vezes gigantescos. O Matplotlib e o seaborn são protagonistas desse capítulo </h5>
+ 
+ <h5 align="center"> Apenas uma observação quanto as funções: Serão necessários chamar atributos da tabela em diversos gráficos: "petal-width", "sepal-length" e etc, por exemplo. Sendo assim, vocês podem fazer comparações com qualquer atributo. Eu os escolhi de forma completamente aleatória, apenas para chamar o gráfico e mostrar de exemplo. Mas vocês podem analisar e comparar como desejarem. Não entendeu? fica tranquilo, quando chegar essa parte, deixarei um exemplo.  </h5>
 
 **2.1. Grafico bigode ou diagrama de caixa**
 
@@ -89,7 +91,7 @@ Simples, não? Vamos a sua imagem.
 
 **2.3. Gráficos de linha**
 
-O gráfico de linha é um dos mais importantes na ciência de dados. Antes da gente trabalhar com ele, primeiro é necessário instalar e importar a ferramenta Seaborn. 
+O gráfico de linha é um dos mais importantes na ciência de dados, facilita demais a nossa visualização. Neste caso, por exemplo, conseguimos ver de forma muito intuitiva, que a iris setosa tem as menores petalas. Vocês se lembram no inicio deste capítulo quando eu falei sobre chamar os atributos? Então, neste eu fiz comparações entre o comprimento e a altura das pétalas. Mas poderia substituir 'petal-length' por 'sepal-length'. Qualquer atributo que quiser comparar, basta chamar. Antes da gente trabalhar com ele, primeiro é necessário instalar e importar a ferramenta Seaborn. 
 
 ```python
 import seaborn as sns
