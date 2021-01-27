@@ -138,3 +138,13 @@ dataset.plot.scatter('petal-length', 'petal-width')
 ```
 
 <img src="https://github.com/Franklyn-Sancho/Projeto_DataScience_Iris/blob/main/dispers%C3%A3o.jpg">
+
+Analisando este gráfico, podemos ver que há dois valores dispersos e um intervalo entre eles. O primeiro, menor, temos no máximo 0,5cm de altura e 2cm de comprimento; já o segundo, maior, os valores estão entre 4 a 7cm de largura e 1 a 2,5cm de altura.
+
+**Ainda sobre dispersão, temos o Swarplot:**
+
+```python
+sns.swarmplot('petal-length', data=dataset)
+```
+
+<img src="https://github.com/Franklyn-Sancho/Projeto_DataScience_Iris/blob/main/swarm.jpg">
