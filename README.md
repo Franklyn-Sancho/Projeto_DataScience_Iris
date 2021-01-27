@@ -129,3 +129,12 @@ sns.pairplot(dataset, hue='classe')
 Vamos as imagens desse monumento: aproveite :heart:
 
 <img src="https://github.com/Franklyn-Sancho/Projeto_DataScience_Iris/blob/main/paitplot.png">
+
+**2.6. Grafico de dispersão**<br>
+Não tem como falar sobre estatística sem mencionar dispersão. E o que seria isso? como o nome já diz, seria o grau de variabilidade da nossa amostragem. Num conjunto nós temos os dados e os atributos, a dispersão seria uma forma simples de visualizar o quanto os dados estão espalhados. OK, vamos a função dessa belezinha. 
+
+```python
+dataset.plot.scatter('petal-length', 'petal-width')
+```
+
+<img src="https://github.com/Franklyn-Sancho/Projeto_DataScience_Iris/blob/main/dispers%C3%A3o.jpg">
